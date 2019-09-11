@@ -187,10 +187,7 @@ func setDesktopState(n int, e bool) {
 
 func startClock() {
 	t := time.Now()
-fmt.Println("foobar start", clockStart, "stop", clockStop)
 	clockStart = t.Add(clockStart.Sub(clockStop))
-fmt.Println("and", clockStart.Sub(clockStop).String())
-fmt.Println("and", (clockStart.Sub(clockStop)).String())
 	clockRunning = true
 }
 
